@@ -89,6 +89,71 @@ playButton.addEventListener('click', function playVid() {
     vid.play();
 })
 
-hot.addEventListener('click', function() {
-    block1first.style.display = "none"
+iced.addEventListener('click', function() {
+    block1first.style.opacity = 1
+    block1second.style.opacity = 0
+    block1third.style.opacity = 0
+    iced.style.color = "rgb(0, 255, 255)"
+    hot.style.color = "rgb(255, 255, 255)"
+    fruit.style.color = "rgb(255, 255, 255)"
 })
+
+hot.addEventListener('click', function() {
+    block1first.style.opacity = 0
+    block1second.style.opacity = 1
+    block1third.style.opacity = 0
+    iced.style.color = "rgb(255, 255, 255)"
+    hot.style.color = "rgb(0, 255, 255)"
+    fruit.style.color = "rgb(255, 255, 255)"
+})
+
+fruit.addEventListener('click', function() {
+    block1first.style.opacity = 0
+    block1second.style.opacity = 0
+    block1third.style.opacity = 1
+    iced.style.color = "rgb(255, 255, 255)"
+    fruit.style.color = "rgb(0, 255, 255)"
+    hot.style.color = "rgb(255, 255, 255)"
+})
+
+
+
+// middleboxLeft.addEventListener('mouseover', function(){
+//     middleboxLeft.style.color = "rgb(255, 255, 255)"
+//     middleboxLeft.style.backgroundColor = "rgb(0,153,153)"
+// })
+
+// middleboxLeft.addEventListener('mouseout', function(){
+//     middleboxLeft.style.color = "rgb(0,153,153)"
+//     middleboxLeft.style.backgroundColor = "rgb(255, 255, 255)"
+// })
+
+// middleboxRight.addEventListener('mouseover', function(){
+//     middleboxRight.style.color = "rgb(255, 255, 255)"
+//     middleboxRight.style.backgroundColor = "rgb(0,153,153)"
+// })
+
+// middleboxRight.addEventListener('mouseout', function(){
+//     middleboxRight.style.color = "rgb(0,153,153)"
+//     middleboxRight.style.backgroundColor = "rgb(255, 255, 255)"
+// })
+
+// bottomboxLeft.addEventListener('mouseover', function(){
+//     bottomboxLeft.style.color = "rgb(255, 255, 255)"
+//     bottomboxLeft.style.backgroundColor = "rgb(0,153,153)"
+// })
+
+// bottomboxLeft.addEventListener('mouseout', function(){
+//     bottomboxLeft.style.color = "rgb(0,153,153)"
+//     bottomboxLeft.style.backgroundColor = "rgb(255, 255, 255)"
+// })
+
+// bottomboxRight.addEventListener('mouseover', function(){
+//     bottomboxRight.style.color = "rgb(255, 255, 255)"
+//     bottomboxRight.style.backgroundColor = "rgb(0,153,153)"
+// })
+
+// bottomboxRight.addEventListener('mouseout', function(){
+//     bottomboxRight.style.color = "rgb(0,153,153)"
+//     bottomboxRight.style.backgroundColor = "rgb(255, 255, 255)"
+// })

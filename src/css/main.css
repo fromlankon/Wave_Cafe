@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: Medium;
-    src: url(/src/fonts/Poppins-Medium.ttf);
+    src: url(../fonts/Poppins-Medium.ttf);
 }
 
 @font-face {
     font-family: Bold;
-    src: url(/src/fonts/Poppins-ExtraBold.ttf);
+    src: url(../fonts/Poppins-ExtraBold.ttf);
 }
 
 video{
@@ -48,8 +48,8 @@ video{
 .middleboxLeft{
     width: 48%;
     height: 100px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0,153,153);
+    background-color: rgb(0,153,153);
+    color: rgb(255, 255, 255);
     font-family: Medium;
     font-size: 20px;
     display: flex;
@@ -58,11 +58,6 @@ video{
     gap: 12px;
     transition: .3s;
     cursor: pointer;
-}
-
-.middleboxLeft:hover{
-    background-color: rgb(0,153,153);
-    color: white;
 }
 
 .middleboxRight{
@@ -78,11 +73,6 @@ video{
     gap: 12px;
     transition: .3s;
     cursor: pointer;
-}
-
-.middleboxRight:hover{
-    background-color: rgb(0,153,153);
-    color: white;
 }
 
 .bottombox{
@@ -105,11 +95,6 @@ video{
     cursor: pointer;
 }
 
-.bottomboxLeft:hover{
-    background-color: rgb(0,153,153);
-    color: white;
-}
-
 .bottomboxRight{
     width: 48%;
     height: 100px;
@@ -123,11 +108,6 @@ video{
     gap: 12px;
     cursor: pointer;
     transition: .3s;
-}
-
-.bottomboxRight:hover{
-    background-color: rgb(0,153,153);
-    color: white;
 }
 
 .fa-mug-saucer{
@@ -161,6 +141,7 @@ video{
     position: absolute;
     top: 0%;
     left: 0%;
+    z-index: 100;
     margin-top: 30px;
 }
 
@@ -199,7 +180,7 @@ video{
 }
 
 .price{
-    color: rgb(0,153,153);
+    color: rgb(0, 255, 255);
     font-family: Bold;
     font-size: 20px;
 }
@@ -264,7 +245,7 @@ video{
 .title2{
     font-family: Bold;
     font-size: 30px;
-    color: rgb(0,153,153);
+    color: rgb(0, 255, 255);
     line-height: 20px;
 }
 
@@ -301,7 +282,7 @@ video{
 }
 
 .title1{
-    color: rgb(0,153,153);
+    color: rgb(0, 255, 255);
     font-family: Bold;
     font-size: 22px;
 }
@@ -373,6 +354,7 @@ video{
     color: rgb(0,153,153);
     border: none;
     transition: .3s;
+    cursor: pointer;
 }
 
 .btn:hover{
@@ -413,6 +395,7 @@ video{
     align-items: center;
     display: block;
     transition: .3s;
+    cursor: pointer;
 }
 
 .pauseButton:hover{
@@ -431,6 +414,7 @@ video{
     align-items: center;
     display: none;
     transition: .3s;
+    cursor: pointer;
 }
 
 .playButton:hover{
@@ -446,6 +430,8 @@ video{
     top: 0%;
     left: 50%;
     padding-top: 140px;
+    transition: .3s ease-out;
+    user-select: none;
 }
 
 .block2{
@@ -459,7 +445,8 @@ video{
     justify-content: space-between;
     flex-direction: column;
     opacity: 0;
-    transition: .5s;
+    transition: .3s ease-out;
+    user-select: none;
 }
 
 .block3{
@@ -472,7 +459,8 @@ video{
     flex-direction: column;
     gap: 40px;
     opacity: 0;
-    transition: .5s;
+    transition: .3s ease-out;
+    user-select: none;
 }
 
 .block4{
@@ -485,25 +473,30 @@ video{
     align-items: end;
     gap: 20px;
     opacity: 0;
-    transition: .5s;
+    transition: .3s ease-out;
+    user-select: none;
 }
 
 .iced{
     padding-top: 10px;
     padding-bottom: 10px;
     cursor: pointer;
+    user-select: none;
+    color: aqua;
 }
 
 .hot{
     padding-top: 10px;
     padding-bottom: 10px;
-    cursor: pointer;    
+    cursor: pointer;
+    user-select: none;
 }
 
 .fruit{
     padding-top: 10px;
     padding-bottom: 10px;
     cursor: pointer;
+    user-select: none;
 }
 
 .block1first{
@@ -511,9 +504,8 @@ video{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    opacity: 1;
-    position: relative;
-    display: none;
+    transition: .3s ease-out;
+    user-select: none;
 }
 
 .block1second{
@@ -525,8 +517,9 @@ video{
     top: 0%;
     left: 0%;
     padding-top: 140px;
-    transition: .3s;
-    display: none;
+    transition: .3s ease-out;
+    opacity: 0;
+    user-select: none;
 }
 
 .block1third{
@@ -538,5 +531,7 @@ video{
     top: 0%;
     left: 0%;
     padding-top: 140px;
-    transition: .3s;
+    transition: .3s ease-out;
+    opacity: 0;
+    user-select: none;
 }
